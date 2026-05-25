@@ -386,16 +386,13 @@
   width: 30px;
   height: 30px;
   bottom: 72px;
+  left: 125px;
   background: linear-gradient(135deg, #fff1c7 0%, #f4c860 45%, #b97312 100%);
   box-shadow: 0 0 28px rgba(255, 216, 120, 0.42);
 }
 
 .crown-gem-left {
   left: 78px;
-}
-
-.crown-gem-center {
-  left: 125px;
 }
 
 .crown-gem-right {
@@ -674,9 +671,95 @@
 .cta-section {
   margin-top: 18px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 20px;
-  padding: 32px;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  gap: 24px;
+  padding: 34px;
+  align-items: center;
+}
+
+.cta-copy {
+  display: grid;
+  gap: 16px;
+}
+
+.cta-copy h2 {
+  max-width: 9ch;
+  font-size: clamp(1.85rem, 3vw, 2.85rem);
+  line-height: 1.05;
+}
+
+.cta-copy p {
+  max-width: 56ch;
+}
+
+.cta-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.cta-mini-card:nth-child(3) {
+  grid-column: span 2;
+}
+
+.cta-mini-card {
+  padding: 14px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 216, 153, 0.1);
+}
+
+.cta-mini-card strong,
+.cta-link-card strong {
+  display: block;
+  margin-top: 8px;
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.cta-mini-label,
+.cta-link-label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cta-actions-compact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.cta-link-card {
+  display: block;
+  padding: 20px 22px;
+  border-radius: 24px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 216, 153, 0.14);
+  background: rgba(11, 21, 40, 0.72);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.cta-link-card:hover,
+.cta-link-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(255, 216, 153, 0.38);
+}
+
+.cta-link-primary {
+  background: linear-gradient(135deg, rgba(255, 230, 170, 0.96), rgba(219, 163, 76, 0.92));
+}
+
+.cta-link-primary .cta-link-label,
+.cta-link-primary strong {
+  color: #1e1607;
 }
 
 .reveal {
@@ -742,6 +825,14 @@
 
   .hero-section {
     padding: 32px;
+  }
+
+  .cta-mini-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-mini-card:nth-child(3) {
+    grid-column: auto;
   }
 }
 

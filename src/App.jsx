@@ -3,8 +3,8 @@ import './App.css'
 const stats = [
   { value: '2+', label: 'Years in cloud and DevOps execution' },
   { value: '5', label: 'Technical publications on Medium' },
-  { value: '8.986', label: 'CGPA in Computer Science Engineering' },
   { value: '24/7', label: 'Production reliability mindset' },
+  { value: '8.986', label: 'CGPA in Computer Science Engineering' },
 ]
 
 const impactAreas = [
@@ -168,7 +168,7 @@ function App() {
       <main id="home">
         <section className="hero-section panel reveal">
           <div className="hero-copy">
-            <p className="eyebrow">Royal-grade infrastructure, built for scale</p>
+            <p className="eyebrow">Cloud Engineer | DevOps | Kubernetes | Azure</p>
             <h1>Cloud and DevOps for scale.</h1>
             <p className="hero-summary">
               Siva Kumar U. Cloud & DevOps Engineer with hands-on experience in Kubernetes,
@@ -178,7 +178,7 @@ function App() {
               <a className="button button-primary" href="mailto:sivakumaru2002@gmail.com">
                 Schedule a recruiter conversation
               </a>
-              <a className="button button-secondary" href="https://www.linkedin.com/in/siva-kumar-u" target="_blank" rel="noreferrer">
+              <a className="button button-secondary" href="https://www.linkedin.com/in/siva-kumar-u-076318234" target="_blank" rel="noreferrer">
                 View LinkedIn
               </a>
             </div>
@@ -214,7 +214,7 @@ function App() {
         <section id="summary" className="two-column reveal recruiter-priority">
           <article className="panel narrative-card">
             <p className="section-kicker">Professional Summary</p>
-            <h2>Cloud engineer. Platform focus.</h2>
+            <h2>Cloud Engineer with DevOps and platform depth.</h2>
             <p>
               2 years of experience across cloud infrastructure, deployment automation, Kubernetes
               operations, and enterprise identity delivery. Strong hands in Azure, Terraform, Helm,
@@ -227,11 +227,10 @@ function App() {
           </article>
 
           <article className="panel recruiter-card">
-            <p className="section-kicker">Why Recruiters Shortlist</p>
+            <p className="section-kicker">Career Highlights</p>
             <div className="recruiter-list">
               {recruiterSignals.map((signal) => (
                 <div key={signal} className="recruiter-item">
-                  <span className="recruiter-index">01</span>
                   <p>{signal}</p>
                 </div>
               ))}
@@ -359,7 +358,7 @@ function App() {
             <div className="profile-links">
               <a href="https://github.com/sivakumaru2002" target="_blank" rel="noreferrer">GitHub</a>
               <a href="https://medium.com/@sivakumar_2002" target="_blank" rel="noreferrer">Medium</a>
-              <a href="https://www.linkedin.com/in/siva-kumar-u" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/siva-kumar-u-076318234" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
           </article>
         </section>
@@ -382,21 +381,40 @@ function App() {
         </section>
 
         <section id="contact" className="cta-section panel reveal">
-          <div>
+          <div className="cta-copy">
             <p className="section-kicker">Recruiter CTA</p>
-            <h2>Looking for a cloud engineer who can automate, stabilize, and ship?</h2>
+            <h2>Let&apos;s build reliable cloud platforms.</h2>
             <p>
-              I bring a platform-first mindset across infrastructure, identity, and release delivery.
-              If your team needs someone who can own DevOps execution and communicate with clarity,
-              let’s talk.
+              Open to Cloud Engineer, DevOps Engineer, Platform Engineer, and SRE opportunities
+              across infrastructure automation, Kubernetes delivery, and identity systems.
             </p>
+            <div className="cta-mini-grid">
+              <div className="cta-mini-card">
+                <span className="cta-mini-label">Email</span>
+                <strong>sivakumaru2002@gmail.com</strong>
+              </div>
+              <div className="cta-mini-card">
+                <span className="cta-mini-label">Location</span>
+                <strong>Chennai, India</strong>
+              </div>
+              <div className="cta-mini-card">
+                <span className="cta-mini-label">Focus</span>
+                <strong>Azure, Kubernetes, Terraform</strong>
+              </div>
+            </div>
           </div>
-          <div className="cta-actions">
-            <a className="button button-primary" href="mailto:sivakumaru2002@gmail.com">
-              Email Siva Kumar
+          <div className="cta-actions cta-actions-compact">
+            <a className="cta-link-card cta-link-primary" href="mailto:sivakumaru2002@gmail.com">
+              <span className="cta-link-label">Primary Contact</span>
+              <strong>Email Siva Kumar</strong>
             </a>
-            <a className="button button-secondary" href="https://github.com/sivakumaru2002" target="_blank" rel="noreferrer">
-              Review GitHub work
+            <a className="cta-link-card" href="https://github.com/sivakumaru2002" target="_blank" rel="noreferrer">
+              <span className="cta-link-label">Work Samples</span>
+              <strong>Review GitHub</strong>
+            </a>
+            <a className="cta-link-card" href="https://www.linkedin.com/in/siva-kumar-u-076318234" target="_blank" rel="noreferrer">
+              <span className="cta-link-label">Professional Profile</span>
+              <strong>Open LinkedIn</strong>
             </a>
           </div>
         </section>
