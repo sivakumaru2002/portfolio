@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --page-bg: #050b16;
+  --heading-color: #f8edd1;
+  --text-color: #b7c3d8;
+  --muted: #8d9ab1;
+  --accent: #f3c768;
+  --accent-soft: #ffe4a6;
+  --font-body: 'Manrope', sans-serif;
+  --font-display: 'Cinzel', serif;
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background:
+    radial-gradient(circle at top, rgba(76, 47, 127, 0.4), transparent 34%),
+    radial-gradient(circle at 20% 20%, rgba(30, 89, 175, 0.18), transparent 26%),
+    linear-gradient(180deg, #081120 0%, #050b16 40%, #040913 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--page-bg);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 72px 72px;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+  width: min(1280px, 100%);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+strong {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
